@@ -1,0 +1,74 @@
+body {
+   display: flex;
+   font-family: Montserrat;
+   background-color: rgb(255, 255, 255);
+   
+   line-height: 2rem;
+   justify-content: center; 
+   align-items: center; 
+   height: 100vh;
+ }
+ 
+ header {
+   display: flex;
+ }
+ 
+ .po-main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: auto;
+   row-gap: 8px;
+   width: 70%;
+ }
+ 
+ h1 {
+   text-transform: uppercase;
+   margin: 0;
+ }
+ 
+ button {
+   background: linear-gradient(to top right, #a70657, #ec9cd2);
+   color: #ffffff;
+   padding: 15px 30px;
+   border-radius: 50px;
+   border: none;
+   font-size: 16px;
+   font-weight: 700;
+   text-transform: uppercase;
+   cursor: pointer;
+   transition: background 0.3s ease;
+ }
+ 
+ button:hover {
+   background: linear-gradient(to left bottom, #a70657, #ec9cd2);
+   transform: scale(1.2);
+   transition: 0.3s ease;
+ }
+ 
+ #btn-clear {
+   display: none;
+ }
+ 
+ #div-message {
+   display: flex;
+   flex-direction: row;
+   column-gap: 20px;
+   align-items: center;
+ }
+ 
+ img {
+   border-radius: 50%;
+   border: solid 2px rgb(43, 41, 41);
+   width: 150px;
+   display: none;
+ }
+ 
+ #text-el {
+   text-transform: lowercase;
+ }
+ 
+ #text-begins {
+   display: none;
+ }
+ 
