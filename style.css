@@ -1,9 +1,10 @@
 body {
    display: flex;
+   flex-direction: column;
    font-family: Montserrat;
    background-color: rgb(255, 255, 255);
-   
-   line-height: 2rem;
+   text-align: center;
+   line-height: 2.5rem;
    justify-content: center; 
    align-items: center; 
    height: 100vh;
@@ -13,7 +14,7 @@ body {
    display: flex;
  }
  
- .po-main {
+ .div-main {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -26,6 +27,10 @@ body {
    text-transform: uppercase;
    margin: 0;
  }
+
+ span {
+  font-size: 2em;
+ }
  
  button {
    background: linear-gradient(to top right, #a70657, #ec9cd2);
@@ -33,7 +38,7 @@ body {
    padding: 15px 30px;
    border-radius: 50px;
    border: none;
-   font-size: 16px;
+   font-size: 1rem ;
    font-weight: 700;
    text-transform: uppercase;
    cursor: pointer;
@@ -52,7 +57,7 @@ body {
  
  #div-message {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    column-gap: 20px;
    align-items: center;
  }
@@ -71,4 +76,61 @@ body {
  #text-begins {
    display: none;
  }
+
+ #btn-share a, #btn-share a:visited, #btn-share a:link, #btn-share a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#btn-share{
+  display:none;
+}
+
+   .div-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .div-btn {
+      flex-direction: column;
+    }
+
+    span {
+      font-size: 1.5em;
+     }
+  }
+
+  .div-btn-flag{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+  }
+
+   
+
+   .img-flag{
+    display: block;
+    border: none;
+    border-radius: 0;
+    width: 45px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  
+   }
+   
+   .btn-share-txt{
+    font-size: 16px;
+   }
+
+   .fa-github{
+    color: #a70657;
+    font-size: 3.5rem;
+    
+   }
  
